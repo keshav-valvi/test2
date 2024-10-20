@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #4A90E2;
+    color: white;
+    padding: 20px;
+}
+
+#stack-container {
+    width: 200px;
+    height: 300px;
+    border: 2px solid #4A90E2;
+    border-radius: 10px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.stack-item {
+    background-color: #6BBEED;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: transform 0.3s ease;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    background-color: #4A90E2;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #6BBEED;
+}
+.fade-in {
+    animation: fadeIn 0.5s forwards;
+}
+
+.fade-out {
+    animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #4A90E2;
+    border-radius: 5px;
+    width: 200px;
+}

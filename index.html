@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Stack Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Stack Usage in Email Applications</h1>
+    </header>
+    <main>
+        <section id="animation">
+            <div id="stack-container">
+                <!-- Stack elements will be dynamically inserted here -->
+            </div>
+            <input type="text" id="emailInput" placeholder="Enter email subject">
+            <input type="text" id="tagInput" placeholder="Enter email tag (optional)">
+            <button onclick="addEmail()">Add Email</button>
+            <button onclick="removeEmail()">Delete Email</button>
+            <button onclick="composeEmail()">Compose Email</button>
+            <button onclick="sendEmail()">Send Email</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Email Stack Animation</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
